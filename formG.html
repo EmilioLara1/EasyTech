@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Easy Tech</title>
+        <link rel="stylesheet" href="./css/formG.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <link href="https://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./img/Logos/Isotipo 1 tinta azul.png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html" class="logo">
+                    <img src="./img/Logos/Logo 1 tinta negro.png" alt="">
+                </a>
+                <div class="menu">
+                    <a href="./formT.html" class="nav-link">Trabajo</a>
+                    <a href="./formG.html" class="nav-link">Gaming</a>
+                    <a href="./formE.html" class="nav-link">Edición</a>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Gaming</h1>
+            <h2>Arma la computadora gamer de tus sueños</h2>
+            <form method="POST" action="enviar.php">
+                <div class="inputField">
+                    <label>Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required="required"
+                        class="pregunta"
+                    >
+                </div>
+                <!-- Radio buttons -->
+                <label>¿Para qué la necesitas?:</label>
+                <div class="inputField1">
+                    <input
+                        class="radio"
+                        type="radio"
+                        id="trabajo"
+                        name="necesidad"
+                        value="trabajo"
+                    >
+                    <label class="opc" for="trabajo">Trabajo</label>
+                    <input
+                        class="radio"
+                        type="radio"
+                        id="gaming"
+                        name="necesidad"
+                        value="gaming"
+                        checked="checked"
+                    >
+                    <label class="opc" for="gaming">Gaming</label>
+                    <input class="radio"
+                        type="radio"
+                        id="edicion"
+                        name="necesidad"
+                        value="edicion"
+                    >
+                    <label class="opc" for="edicion">Edición</label>
+                </div>
+                <div class="inputField">
+                    <label>¿Qué tipo de trabajo realizaras o 
+                        que juegos jugarás principalmente?:
+                    </label>
+                    <input
+                    type="text"
+                    name="tipoWork"
+                    id="tipoWork"
+                    class="pregunta"
+                    >
+                </div>
+                <div class="inputField">
+                    <label>¿Qué gama estas buscando?:</label>
+                    <select name="gama" id="gama"> 
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+                <div class="inputField">
+                    <label>¿Realizarás edición multimedia o modelado 3D?</label>
+                    <select name="edicionmul" id="edicionmul">
+                        <option value="Multimedia">Edición multimedia</option>
+                        <option value="3D">Edición 3D</option>
+                        <option value="No">No realizaré edición</option>
+                    </select>
+                </div>
+                
+                <div class="inputField">
+                    <label>¿Cuál es tu presupuesto?:</label>
+                    <input
+                        type="number"
+                        name="presupuesto"
+                        id="presupuesto"
+                        required="required"
+                        class="pregunta"
+                    >
+                </div>
+                <div class="inputField">
+                    <label>¿Cuántos equipos de cómputo necesitas?:</label>
+                    <input
+                        type="number"
+                        name="numero"
+                        id="numero"
+                        required="required"
+                        class="pregunta"
+                    >
+                </div>
+                <div class="inputField">
+                    <label>Teléfono:</label>
+                    <input
+                        type="tel"
+                        name="telefono"
+                        id="telefono"
+                        required="required"
+                        class="pregunta"
+                    >
+                </div>
+                <div class="inputField">
+                    <label>Correo:</label>
+                    <input
+                        type="email"
+                        name="correo"
+                        id="correo"
+                        required="required"
+                        class="pregunta"
+                    >
+                </div>
+                <div class="inputField">
+                    <label>¿Por dónde prefiere que se contacte un asesor?:</label>
+                    <select id="contactor" name="contacto">
+                        <option value="telefono">Teléfono</option>
+                        <option value="correo">Correo</option>
+                    </select>
+
+                </div>
+                <label>¿Sabes que componentes necesitas?</label>
+                <div class="inputField1">
+                    <input
+                        type="radio"
+                        id="si"
+                        name="sabes"
+                        value="si"
+                        id="si"
+                        class="radioss"
+                        checked="checked"
+                    >
+                    <label class="opc"for="sabes">SI</label>
+                    <input
+                        type="radio"
+                        id="no"
+                        name="sabes"
+                        value="no"
+                        id="no"
+                        class="radioss"
+                    >
+                    <label class="opc" for="sabes">No</label>
+                </div>
+                <div id="components">
+                    <div class="inputField">
+                        <label>Procesador:</label>
+                        <input
+                            type="text"
+                            id="cpu"
+                            name="cpu"
+                            class="pregunta"
+                        >
+                    </div>
+                    <div class="inputField">
+                        <label>Motherboard:</label>
+                        <input
+                            type="text"
+                            id="motherboard"
+                            name="mother"
+                            class="pregunta"
+                        >
+                    </div>
+                    <div class="inputField">
+                        <label>Disipador:</label>
+                        <input
+                            type="text"
+                            id="disipador"
+                            name="disipador"
+                            class="pregunta"
+                        >
+                    </div>
+                    <div class="inputField">
+                        <label>Memoria RAM:</label>
+                        <input
+                            type="text"
+                            id="ram"
+                            name="ram"
+                            class="pregunta"
+                        >
+                    </div>
+                    <div class="inputField">
+                        <label>Almacenamiento:</label>
+                        <input
+                            type="text"
+                            id="almacenamiento"
+                            name="almacenamiento"
+                            class="pregunta"
+                        >
+                    </div>
+                    <div class="inputField">
+                        <label>Almacenamiento adicional:</label>
+                        <input
+                            type="text"
+                            id="adicional"
+                            name="adicional"
+                            class="pregunta"
+                        >
+                    </div>
+                    <div class="inputField">
+                        <label>Tarjeta gráfica:</label>
+                        <input
+                            type="text"
+                            id="gpu"
+                            name="gpu"
+                            class="pregunta"
+                        >
+                    </div>
+                    <div class="inputField">
+                        <label>Gabinete:</label>
+                        <input
+                            type="text"
+                            id="gabinete"
+                            name="gabinete"
+                            class="pregunta"
+                        >
+                    </div>
+                </div>
+                <a href="./index.html">
+                    <input type="submit" id="submit" value="Enviar">
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+<footer class="foot">
+    <div class="group1">
+        <div class="box">
+            <figure class="logo">
+                <a href="#">
+                    <img src="./img/Logos/Isotipo 1 tinta azul.png" alt="Logo de footer">
+                </a>
+            </figure>
+        </div>
+
+        <div class="box">
+            <h2>CONTACTO</h2>
+            <p>Tel: +52 998 157 8682</p>
+            <p>Correo: habysiness@gmail.com</p>
+            <p>P. Lomas Altas 4777, Lomas altas, 45128 Zapopan, Jalisco.</p>
+        </div>
+        <div class="box">
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <a class="preguntas" href="#">Pagos</a>
+            <a class="preguntas" href="#">Envíos</a>
+            <a class="preguntas" href="#">Garantías</a>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <figure class="redes">
+                <a href="#"><img src="./img/redes/tiktok.png" alt="tiktok"></a>
+                <a href="#"><img src="./img/redes/pngwing.com.png" alt="instagram"></a>
+                <a href="#"><img src="./img/redes/Youtube_logo.png" alt="YouTube"></a>
+            </figure>
+            
+        </div>
+    </div>
+</footer>
+<script src="./js/form.js"></script>
+</main>
+</body>
+</html>

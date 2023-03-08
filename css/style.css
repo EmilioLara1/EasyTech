@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+body{
+    background-color: rgb(49,49,49);
+    color: aliceblue;
+    width: 100%;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/* HEADER */
+header a{
+    text-decoration: none;
+    color: black;
+
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(43, 129, 193);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    border: 2px solid rgb(49,49,49);
+}
+.logo{
+    display: flex;
+    height: 90px;
+    margin-left: 2px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+    font-size: 3vh;
+}
+
+nav a:hover{
+    color: rgb(178, 178, 178);
+}
+
+@media (max-width:700px){
+    header nav{
+       padding-left: 10px; 
+    }
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------- */
+/* SLIDER */
+
+.slideshow{
+    width: 100%;
+    position: relative;
+}
+.slideshow ul,ol{
+    list-style: none;
+}
+
+.slider{
+    border-radius: 30px;
+}
+.slider li, ul{
+    width: 100%;
+}
+
+.slider li img{
+    width: 100%;
+    height: 50vw;
+    opacity: 40%;
+}
+
+.slider .caption{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 15px 50px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.caption h1{
+    color: rgb(97, 186, 255);
+    font-size: 8vw;
+}
+
+.caption p{
+    font-size:4vw;
+}
+
+.pagination{
+    position:absolute;
+    top: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pagination li{
+    font-size: 20px;
+    margin: 2px 5px;
+    color: rgb(178, 178, 178);
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------- */
+/* CONTENT */
+
+.proposito{
+    
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.proposito img{
+    width: 60%;
+    border-radius: 30px;
+}
+
+.proposito h2{
+    color: rgb(43, 129, 193);
+    font-size: 7vw;
+}
+
+.proposito p{
+    font-size: 2vw;
+    margin-left: 20px;
+    padding-top: 5%;
+    overflow: hidden;
+}
+
+.funcionamiento{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.funcionamiento img{
+    width: 30%;
+    height: 430px;
+    float: right;
+    border-radius: 30px;
+}
+
+.funcionamiento h2{
+    padding-top: 3%;
+    color: rgb(43, 129, 193);
+    font-size: 7vw;
+}
+
+.funcionamiento p{
+    font-size: 2vw;
+    margin-left: 20px;
+    padding-top: 5%;
+    overflow: hidden;
+    padding-right: 20px;
+}
+/* ------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------- */
+/* FOOTER */
+.foot{
+    width: 100%;
+    background-color: rgb(178, 178, 178);
+    margin-top: 30px;
+}
+.foot .group1{
+    width: 100%;
+    max-width: 1200PX;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+    text-align: center;
+}
+
+.foot .group1 .box .logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foot .group1 .box figure img{
+    width: 250px;
+}
+
+.foot .group1 .box .redes img{
+    width: 60px;
+}
+
+
+.foot .group1 .box h2{
+    color: rgb(43, 129, 193);
+    margin-bottom: 25px;
+    font-size: 3vw;
+}
+
+.foot .group1 .box p{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.preguntas {
+    color: blue;
+    font-size: 20px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:800px){
+    .foot .group1{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 15px 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot .group1 .box figure img{
+        width: 150px;
+    }
+    .foot .group1 .box h2{
+        color: rgb(43, 129, 193);
+        font-size: 20px;
+    }
+
+    .proposito h2{
+        color: rgb(43, 129, 193);
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .proposito p{
+        font-size: 10px;
+        margin-left: 20px;
+        padding-top: 5%;
+        overflow: hidden;
+    }
+
+    .funcionamiento img{
+        width: 30%;
+        float: right;
+        border-radius: 30px;
+        height: 220px;
+    }
+
+    .funcionamiento h2{
+        padding-top: 3%;
+        color: rgb(43, 129, 193);
+        font-size: 30px;
+    }
+
+    .funcionamiento p{
+        font-size: 10px;
+        margin-left: 20px;
+        padding-top: 5%;
+        overflow: hidden;
+        padding-right: 20px;
+    }
+
+    footer{
+        width: 100%;
+        background-color: rgb(178, 178, 178);
+    }
+}
