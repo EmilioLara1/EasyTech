@@ -11,8 +11,6 @@ body{
     color: aliceblue;
     width: 100%;
 }
-
-
 /* ------------------------------------------------------------------------------- */
 /* HEADER */
 header a{
@@ -57,139 +55,18 @@ nav a:hover{
 }
 
 
-/* ------------------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------------------- */
-/* SLIDER */
-
-.slideshow{
-    width: 100%;
-    position: relative;
-}
-.slideshow ul,ol{
-    list-style: none;
+.contenidos h2{
+    color: rgb(43, 129, 193);
+    padding: 20px;
+    font-size: 40px;
 }
 
-.slider{
-    border-radius: 30px;
-}
-.slider li, ul{
-    width: 100%;
-}
-
-.slider li img{
-    width: 100%;
-    height: 50vw;
-    opacity: 40%;
-}
-
-.slider .caption{
-    position: absolute;
-    width: 100%;
-    height: 90%;
-    top: 0;
-    left: 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    padding: 15px 50px;
-    overflow: hidden;
-    word-wrap: break-word;
-}
-
-.caption h1{
-    color: rgb(97, 186, 255);
-    font-size: 8vw;
-}
-
-.caption p{
-    font-size:4vw;
-}
-
-.pagination{
-    position:absolute;
-    top: 100%;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.pagination li{
+.contenidos p{
+    padding:20px;
     font-size: 20px;
-    margin: 2px 5px;
-    color: rgb(178, 178, 178);
-    cursor: pointer;
-}
-/* ------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------- */
-/* CONTENT */
-
-.proposito{
-    
-    margin-top: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.proposito img{
-    width: 60%;
-    border-radius: 30px;
 }
 
-.proposito h2{
-    color: rgb(43, 129, 193);
-    font-size: 7vw;
-}
-
-.proposito p{
-    font-size: 2vw;
-    margin-left: 20px;
-    padding-top: 5%;
-    overflow: hidden;
-}
-
-.funcionamiento{
-    margin-top: 3%;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: block;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.funcionamiento img{
-    width: 30%;
-    height: 700px;
-    float: right;
-    border-radius: 30px;
-}
-
-.funcionamiento h2{
-    padding-top: 3%;
-    color: rgb(43, 129, 193);
-    font-size: 7vw;
-}
-
-.funcionamiento p{
-    font-size: 2vw;
-    margin-left: 20px;
-    padding-top: 5%;
-    overflow: hidden;
-    padding-right: 20px;
-}
-/* ------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------- */
 /* FOOTER */
 .foot{
     width: 100%;
